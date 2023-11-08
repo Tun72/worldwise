@@ -19,7 +19,6 @@ function CountryList() {
     }
   }, []);
 
-  console.log(countries);
 
   if (!cities.length) return <Message message="Add your first city" />;
 

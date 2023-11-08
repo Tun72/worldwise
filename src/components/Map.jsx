@@ -39,7 +39,7 @@ function Map() {
     [geolocationPosition]
   );
 
-  console.log(mapPosition);
+
   return (
     <div className={styles.mapContainer}>
       {!geolocationPosition && (
@@ -78,7 +78,7 @@ function Map() {
 }
 
 function CenterMap({ position }) {
-  console.log(position);
+
   const map = useMap();
   map.setView(position);
   return null;
